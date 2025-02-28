@@ -1,0 +1,122 @@
+/* Modal Background */
+.modal-background {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+/* Task Form Container */
+.task-form {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Ensures the form doesn't stretch too much */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form Labels */
+.task-form label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  align-self: flex-start;
+}
+
+/* Input Fields */
+.task-form input,
+.task-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* Textarea specific styles */
+.task-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit Button */
+.task-form button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 8px; /* Adds spacing between buttons */
+}
+
+/* Hover effect for buttons */
+.task-form button:hover {
+  background-color: #2563eb;
+}
+
+/* Buttons Container (Aligned side by side) */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap:200px;
+  margin-top: 20px;
+}
+
+/* Cancel Button */
+.task-form button[type="button"] {
+  background-color: #f44336; /* Red for cancel */
+}
+
+.task-form button[type="button"]:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+/* TaskForm.css */
+
+/* Success box style */
+/* TaskForm.css */
+
+/* Success box style */
+.success-box {
+  background-color: #dff0d8;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #d0e9c6;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.success-box h3 {
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.success-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.success-box button {
+  background-color: #5bc0de;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.success-box button:hover {
+  background-color: #31b0d5;
+}

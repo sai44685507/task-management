@@ -1,0 +1,87 @@
+/* Navbar Styles */
+.navbar {
+    background-color:#ECEDEE; /* Tailwind bg-gray-800 */
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 320px; /* Equivalent to Tailwind w-80 */
+  }
+  
+  .search-bar input {
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  /* Filter Dropdown */
+  .filter-dropdown {
+    position: relative;
+  }
+  
+  .filter-dropdown select {
+    background-color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .filter-dropdown select:focus {
+    border-color: #4a90e2;
+  }
+  /* Navbar.css */
+
+/* Style for search icon */
+.search-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-right: 0px;
+  vertical-align: middle; /* Aligns the icon vertically with the text */
+}
+
+/* Style for filter icon */
+/* Add styles to align the icon only in the 'Filter' option */
+.filter-dropdown select {
+  padding-left: 30px; /* Add padding to leave space for the icon */
+}
+
+.filter-dropdown .filter-icon {
+  position: absolute;
+  left: 10px; /* Adjust the icon position */
+  width: 20px; /* Set the width of the icon */
+  height: 20px; /* Set the height of the icon */
+  pointer-events: none; /* Disable click on the icon */
+}
+
+/* Add padding-left to the 'Filter' option to leave space for the icon */
+.filter-dropdown select option:first-child {
+  position: relative;
+  padding-left: 30px; /* Add padding to the 'Filter' option */
+}
+
+/* Optional: Style the other options inside the select dropdown */
+.filter-dropdown select option {
+  position: relative;
+}
+
+/* Hide the icon from other options */
+.filter-dropdown select option img {
+  display: none;
+}
+

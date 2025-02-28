@@ -1,0 +1,106 @@
+/* TaskBoard.css */
+
+.task-board {
+  padding: 24px;
+}
+
+/* Task Board Grid */
+.task-board-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 16px;
+}
+
+/* Task Column */
+.task-column {
+  background-color: #f3f4f6; /* Equivalent to bg-gray-100 */
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* Task Column Header */
+.task-column-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 4px solid #e5e7eb; /* Line under the heading */
+  padding-bottom: 8px;
+}
+
+.task-column-header h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+/* Circle next to the category */
+.status-circle {
+  width: 16px;
+  margin-left: 100px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 8px; /* Adds space between circle and title */
+}
+
+/* Task count next to the category */
+.task-count {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 8px;
+  color: #4b5563; /* Darker text color */
+}
+.task-count-board{
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 12px; /* Adjusted font size */
+  color: white; /* White text color for visibility */
+  background-color: #4b5563; /* Darker background color */
+  border-radius: 50%; /* Makes the background circular */
+  width: 24px; /* Set a fixed width for the circle */
+  height: 24px; /* Set a fixed height for the circle */
+  display: flex;
+  justify-content: center; /* Centers text horizontally */
+  align-items: center; /* Centers text vertically */
+}
+/* To Do Status */
+.to-do .status-circle {
+  background-color: red; /* Red color for 'To Do' */
+}
+
+.to-do .task-column-header h2 {
+  color: black; /* Red color for 'To Do' title */
+}
+
+/* On Progress Status */
+.on-progress .status-circle {
+  background-color: yellow; /* Yellow color for 'On Progress' */
+}
+
+.on-progress .task-column-header h2 {
+  color: black; /* Yellow color for 'On Progress' title */
+}
+
+/* Done Status */
+.done .status-circle {
+  background-color: green; /* Green color for 'Done' */
+}
+
+.done .task-column-header h2 {
+  color: black; /* Green color for 'Done' title */
+}
+
+/* Empty message when no tasks */
+.task-empty-message {
+  color: #6b7280; /* Equivalent to text-gray-500 */
+  font-size: 14px;
+}
+
+/* Add Task Button */
+.add-task-btn {
+  background-color: black; /* Equivalent to bg-purple-500 */
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}

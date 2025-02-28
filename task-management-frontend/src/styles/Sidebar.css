@@ -1,0 +1,90 @@
+/* Sidebar.css */
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .task-statistics-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between boxes */
+  }
+  
+  .task-statistics-box {
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light border for the box */
+    display: flex;
+    align-items: center; /* Align icon and text horizontally */
+    gap: 15px; /* Space between the icon and the text */
+    background-color: #fff; /* White background for the boxes */
+  }
+  
+  .task-icon img {
+    width: 30px; /* Adjust the size of the icons */
+    height: 30px;
+    object-fit: cover;
+  }
+  
+  .task-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+  }
+  
+  .task-text h4 {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .task-count {
+    font-size: 24px;
+    color: #666;
+    margin-top: 10px; /* Space between text and count */
+  }
+  
+  .count {
+    font-weight: bold;
+  }
+  
+  .total {
+    font-weight: bold;
+    color: #999;
+    display: inline;
+  }
+  
+  /* Add Task Button */
+  .add-task-btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .add-task-btn button {
+    padding: 10px 20px;
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .add-task-btn button:hover {
+    background-color: #333; /* Darker black background on hover */
+  }
+  
+  .add-task-btn button span {
+    margin-right: 8px; /* Space between "+" and the text */
+  }
+  
+  .add-task-btn button:before {
+    content: "+"; /* Add a "+" before the "Add Task" text */
+    margin-right: 8px; /* Add a space between "+" and "Add Task" */
+  }
+  
