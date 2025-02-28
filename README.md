@@ -68,7 +68,6 @@ task-management/
 - Node.js
 - Express.js
 - MongoDB + Mongoose
-- JWT (Authentication)
 - dotenv (Environment variable management)
 - CORS (Cross-Origin Resource Sharing)
 
